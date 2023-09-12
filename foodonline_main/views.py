@@ -2,5 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
+
+
 def home(request):
-    return HttpResponse("New Restaurent page ")
+    return render(request, 'home.html')
